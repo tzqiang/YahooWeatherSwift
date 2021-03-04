@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		636C2C3925F0C2F2001969E1 /* LaunchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 636C2C3825F0C2F2001969E1 /* LaunchIcon.png */; };
+		636C2C4025F0C579001969E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 636C2C4225F0C579001969E1 /* InfoPlist.strings */; };
+		636C2C4925F0C646001969E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 636C2C4B25F0C646001969E1 /* Localizable.strings */; };
 		637AAF7725ECC87C0019C49E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637AAF7625ECC87C0019C49E /* AppDelegate.swift */; };
-		637AAF7925ECC87C0019C49E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637AAF7825ECC87C0019C49E /* SceneDelegate.swift */; };
 		637AAF7B25ECC87C0019C49E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637AAF7A25ECC87C0019C49E /* ViewController.swift */; };
-		637AAF7E25ECC87C0019C49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637AAF7C25ECC87C0019C49E /* Main.storyboard */; };
 		637AAF8025ECC87E0019C49E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637AAF7F25ECC87E0019C49E /* Assets.xcassets */; };
 		637AAF8325ECC87E0019C49E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637AAF8125ECC87E0019C49E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		636C2C3825F0C2F2001969E1 /* LaunchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchIcon.png; sourceTree = "<group>"; };
+		636C2C4125F0C579001969E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		636C2C4425F0C57E001969E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		636C2C4A25F0C646001969E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		636C2C4D25F0C64B001969E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		637AAF7325ECC87C0019C49E /* YahooWeatherSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooWeatherSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		637AAF7625ECC87C0019C49E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		637AAF7825ECC87C0019C49E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		637AAF7A25ECC87C0019C49E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		637AAF7D25ECC87C0019C49E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		637AAF7F25ECC87E0019C49E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		637AAF8225ECC87E0019C49E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		637AAF8425ECC87E0019C49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +41,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		636C2BF025F0C203001969E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				636C2C3825F0C2F2001969E1 /* LaunchIcon.png */,
+				637AAF7F25ECC87E0019C49E /* Assets.xcassets */,
+				636C2C4B25F0C646001969E1 /* Localizable.strings */,
+				637AAF8425ECC87E0019C49E /* Info.plist */,
+				636C2C4225F0C579001969E1 /* InfoPlist.strings */,
+				637AAF8125ECC87E0019C49E /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		636C2C3625F0C251001969E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				637AAF7625ECC87C0019C49E /* AppDelegate.swift */,
+				637AAF7A25ECC87C0019C49E /* ViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		637AAF6A25ECC87C0019C49E = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +82,8 @@
 		637AAF7525ECC87C0019C49E /* YahooWeatherSwift */ = {
 			isa = PBXGroup;
 			children = (
-				637AAF7625ECC87C0019C49E /* AppDelegate.swift */,
-				637AAF7825ECC87C0019C49E /* SceneDelegate.swift */,
-				637AAF7A25ECC87C0019C49E /* ViewController.swift */,
-				637AAF7C25ECC87C0019C49E /* Main.storyboard */,
-				637AAF7F25ECC87E0019C49E /* Assets.xcassets */,
-				637AAF8125ECC87E0019C49E /* LaunchScreen.storyboard */,
-				637AAF8425ECC87E0019C49E /* Info.plist */,
+				636C2C3625F0C251001969E1 /* Classes */,
+				636C2BF025F0C203001969E1 /* Supporting Files */,
 			);
 			path = YahooWeatherSwift;
 			sourceTree = "<group>";
@@ -108,6 +129,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 637AAF6A25ECC87C0019C49E;
 			productRefGroup = 637AAF7425ECC87C0019C49E /* Products */;
@@ -124,9 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636C2C4925F0C646001969E1 /* Localizable.strings in Resources */,
 				637AAF8325ECC87E0019C49E /* LaunchScreen.storyboard in Resources */,
+				636C2C4025F0C579001969E1 /* InfoPlist.strings in Resources */,
 				637AAF8025ECC87E0019C49E /* Assets.xcassets in Resources */,
-				637AAF7E25ECC87C0019C49E /* Main.storyboard in Resources */,
+				636C2C3925F0C2F2001969E1 /* LaunchIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,19 +163,28 @@
 			files = (
 				637AAF7B25ECC87C0019C49E /* ViewController.swift in Sources */,
 				637AAF7725ECC87C0019C49E /* AppDelegate.swift in Sources */,
-				637AAF7925ECC87C0019C49E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		637AAF7C25ECC87C0019C49E /* Main.storyboard */ = {
+		636C2C4225F0C579001969E1 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				637AAF7D25ECC87C0019C49E /* Base */,
+				636C2C4125F0C579001969E1 /* en */,
+				636C2C4425F0C57E001969E1 /* zh-Hans */,
 			);
-			name = Main.storyboard;
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		636C2C4B25F0C646001969E1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				636C2C4A25F0C646001969E1 /* en */,
+				636C2C4D25F0C64B001969E1 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		637AAF8125ECC87E0019C49E /* LaunchScreen.storyboard */ = {
@@ -169,6 +202,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -216,7 +250,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				INFOPLIST_FILE = "YahooWeatherSwift/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -230,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -271,7 +307,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				INFOPLIST_FILE = "YahooWeatherSwift/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 936M5Y4RHX;
-				INFOPLIST_FILE = YahooWeatherSwift/Info.plist;
+				INFOPLIST_FILE = "YahooWeatherSwift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 936M5Y4RHX;
-				INFOPLIST_FILE = YahooWeatherSwift/Info.plist;
+				INFOPLIST_FILE = "YahooWeatherSwift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

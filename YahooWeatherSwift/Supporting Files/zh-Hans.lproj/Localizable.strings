@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  YahooWeatherSwift
+
+  Created by taozongqiang on 2021/3/4.
+  
+*/
+
+"button_cancel" = "取消";
+"button_done" = "完成";

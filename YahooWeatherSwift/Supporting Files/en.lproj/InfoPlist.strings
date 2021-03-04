@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  YahooWeatherSwift
+
+  Created by taozongqiang on 2021/3/4.
+  
+*/
+
+CFBundleDisplayName = "Yahoo Weather";
