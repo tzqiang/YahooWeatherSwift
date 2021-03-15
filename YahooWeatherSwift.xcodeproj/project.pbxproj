@@ -10,6 +10,10 @@
 		636C2C3925F0C2F2001969E1 /* LaunchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 636C2C3825F0C2F2001969E1 /* LaunchIcon.png */; };
 		636C2C4025F0C579001969E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 636C2C4225F0C579001969E1 /* InfoPlist.strings */; };
 		636C2C4925F0C646001969E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 636C2C4B25F0C646001969E1 /* Localizable.strings */; };
+		636EAB3E25FEFBE800FE3467 /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EAB3D25FEFBE800FE3467 /* AddCityViewController.swift */; };
+		636EAB4125FF053D00FE3467 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EAB4025FF053D00FE3467 /* UINavigationController+Extension.swift */; };
+		636EAB4525FF3B8D00FE3467 /* I18nTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EAB4425FF3B8D00FE3467 /* I18nTool.swift */; };
+		636EAB4D25FF5F5000FE3467 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EAB4C25FF5F5000FE3467 /* NavigationController.swift */; };
 		6371CFAA25FB626200392C82 /* AppAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371CFA425FB626200392C82 /* AppAPI.swift */; };
 		6371CFAB25FB626200392C82 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371CFA625FB626200392C82 /* UIView+Extension.swift */; };
 		6371CFAC25FB626200392C82 /* NSDictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371CFA725FB626200392C82 /* NSDictionary+Extension.swift */; };
@@ -31,6 +35,10 @@
 		636C2C4425F0C57E001969E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		636C2C4A25F0C646001969E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		636C2C4D25F0C64B001969E1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		636EAB3D25FEFBE800FE3467 /* AddCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewController.swift; sourceTree = "<group>"; };
+		636EAB4025FF053D00FE3467 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		636EAB4425FF3B8D00FE3467 /* I18nTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = I18nTool.swift; sourceTree = "<group>"; };
+		636EAB4C25FF5F5000FE3467 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		6371CFA425FB626200392C82 /* AppAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAPI.swift; sourceTree = "<group>"; };
 		6371CFA625FB626200392C82 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		6371CFA725FB626200392C82 /* NSDictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Extension.swift"; sourceTree = "<group>"; };
@@ -74,10 +82,29 @@
 			children = (
 				6371CFA325FB626200392C82 /* App */,
 				6371CFA525FB626200392C82 /* Extensions */,
+				636EAB4325FF3B6A00FE3467 /* Tools */,
+				636EAB3825FEFB9C00FE3467 /* City */,
 				637AAF7625ECC87C0019C49E /* AppDelegate.swift */,
 				637AAF7A25ECC87C0019C49E /* ViewController.swift */,
+				636EAB4C25FF5F5000FE3467 /* NavigationController.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		636EAB3825FEFB9C00FE3467 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				636EAB3D25FEFBE800FE3467 /* AddCityViewController.swift */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		636EAB4325FF3B6A00FE3467 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				636EAB4425FF3B8D00FE3467 /* I18nTool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		6371CFA325FB626200392C82 /* App */ = {
@@ -95,6 +122,7 @@
 				6371CFA925FB626200392C82 /* Data+Extension.swift */,
 				6371CFA725FB626200392C82 /* NSDictionary+Extension.swift */,
 				6371CFA625FB626200392C82 /* UIView+Extension.swift */,
+				636EAB4025FF053D00FE3467 /* UINavigationController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,13 +307,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636EAB4D25FF5F5000FE3467 /* NavigationController.swift in Sources */,
 				637AAF7B25ECC87C0019C49E /* ViewController.swift in Sources */,
 				6371CFAE25FB626200392C82 /* Data+Extension.swift in Sources */,
 				637AAF7725ECC87C0019C49E /* AppDelegate.swift in Sources */,
+				636EAB4525FF3B8D00FE3467 /* I18nTool.swift in Sources */,
 				6371CFAC25FB626200392C82 /* NSDictionary+Extension.swift in Sources */,
 				6371CFAB25FB626200392C82 /* UIView+Extension.swift in Sources */,
 				6371CFAD25FB626200392C82 /* String+Extension.swift in Sources */,
 				6371CFAA25FB626200392C82 /* AppAPI.swift in Sources */,
+				636EAB3E25FEFBE800FE3467 /* AddCityViewController.swift in Sources */,
+				636EAB4125FF053D00FE3467 /* UINavigationController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

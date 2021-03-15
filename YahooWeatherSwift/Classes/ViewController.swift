@@ -11,12 +11,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
         navigationItem.title = "Yahoo"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button_cancel", bundle: .main, comment: ""), style: .plain, target: self, action: nil)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("button_done", bundle: .main, comment: ""), style: .plain, target: self, action: nil)
-        view.backgroundColor = .white
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: LocalizedString("button_cancel"), style: .plain, target: self, action: nil)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: LocalizedString("button_done"), style: .plain, target: self, action: #selector(self.addCity))
+        view.backgroundColor = .gray
 
         self.testNetwork()
     }
@@ -62,5 +60,11 @@ class ViewController: UIViewController {
             }
         }
         task.resume()
+    }
+
+    @objc
+    func addCity() {
+        let vc = AddCityViewController()
+        self.navigationController?.pushAnimationWithPresent(vc)
     }
 }
